@@ -11,8 +11,8 @@ from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 
 load_dotenv()
-os.environ["GOOGLE_API_KEY"] ="AIzaSyCF26W2NjkanZFDgqBL__hnJbjy2xGJ0n0"
-genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
+#GOOGLE_API_KEY ="AIzaSyCF26W2NjkanZFDgqBL__hnJbjy2xGJ0n0"
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 # read all pdf files and return text
 
